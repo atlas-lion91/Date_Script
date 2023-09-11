@@ -11,7 +11,9 @@ The user will select food and drink items from a restaurant menu list for both t
 ## Budget Tracking:
 
 The script will keep track of the user's budget and update it after each food or drink item selection. It will also display the remaining budget to the user after each order.
-Payment Confirmation:
+
+
+## Payment Confirmation:
 
 At the end of the date, the user will be asked to confirm if they agree to pay the bill.
 
