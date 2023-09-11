@@ -1,6 +1,6 @@
 # Date_Script
 
-## Purpose
+## Purpose:
 The purpose of this script is to simulate a dating scenario and offers an interactive experience for the user. The script will facilitate the following functionalities:
 
 ### User Input:
