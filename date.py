@@ -11,7 +11,7 @@ budget = float(input("Enter your budget for the date: $"))
 
 # Define a restaurant menu items
 menu = {
-    "Caesar Salad": 8.99,
+    "House Salad": 8.99,
     "Couscous Bowl": 20.99,
     "NY Strip Steak": 30.0,
     "Spaghetti Carbonara": 22.99,
