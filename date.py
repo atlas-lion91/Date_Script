@@ -11,13 +11,13 @@ budget = float(input("Enter your budget for the date: $"))
 
 # Define a restaurant menu items
 menu = {
-    "Caesar Salad": 8.0,
-    "Couscous Bowl": 20.0,
+    "Caesar Salad": 8.99,
+    "Couscous Bowl": 20.99,
     "NY Strip Steak": 30.0,
-    "Spaghetti Carbonara": 20.0,
-    "Tiramisu": 8.0,
-    "Cocktail": 12.0,
-    "Non-Alcoholic Beverage": 5.0
+    "Spaghetti Carbonara": 22.99,
+    "Tiramisu": 8.50,
+    "Cocktail": 12.75,
+    "Non-Alcoholic Beverage": 5.65
 }
 
 # Variables to keep track of the order cost
@@ -28,7 +28,8 @@ def calculate_remaining_budget(total_budget, order_cost):
     return total_budget - order_cost
 
 # Function to place an order
-# In this script, user_order_cost is a global variable because it needs to be accessed and modified from both the place_order function and the main part of the script. 
+# In this script, user_order_cost is a global variable because it needs to be accessed and modified from both the place_order function and the main part of the script.
+# +=: This is the "add and assign" operator. In this script, it's a shorthand way of writing user_order_cost = user_order_cost + order_cost.
 def place_order(person_name):
     global user_order_cost
     print(f"\n{person_name}'s turn to order:")
