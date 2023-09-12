@@ -11,11 +11,13 @@ budget = float(input("Enter your budget for the date: $"))
 
 # Define a restaurant menu items
 menu = {
-    "appetizer": 10.0,
-    "entree": 20.0,
-    "dessert": 8.0,
-    "cocktail": 12.0,
-    "soda": 5.0
+    "Caesar Salad": 8.0,
+    "Couscous Bowl": 20.0,
+    "NY Strip Steak": 30.0,
+    "Spaghetti Carbonara": 20.0,
+    "Tiramisu": 8.0,
+    "Cocktail": 12.0,
+    "Non-Alcoholic Beverage": 5.0
 }
 
 # Variables to keep track of the order cost
@@ -55,6 +57,6 @@ agree_to_pay = input("\nDo you agree to pay the bill? (yes/no): ").lower()
 # Check if they will get a second date based on their budget
 if agree_to_pay == "yes" and total_bill <= budget:
     print(f"Remaining budget: ${calculate_remaining_budget(budget, total_bill):.2f}")
-    print(f"\nCongratulations! {date_name} had a great time and agreed to a second date!.")
+    print(f"\nCongratulations! {date_name} had a great time and agreed to a second date!")
 else:
     print(f"\nSorry, {user_name} the date did not go well. {date_name} left & you won't get a second date.")
