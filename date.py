@@ -26,6 +26,7 @@ def calculate_remaining_budget(total_budget, order_cost):
     return total_budget - order_cost
 
 # Function to place an order
+# In this script, user_order_cost is a global variable because it needs to be accessed and modified from both the place_order function and the main part of the script. 
 def place_order(person_name):
     global user_order_cost
     print(f"\n{person_name}'s turn to order:")
@@ -33,7 +34,7 @@ def place_order(person_name):
         while True:
             order_quantity = int(input(f"How many {item}s would {person_name} like to order? (0 to skip): "))
             if order_quantity < 0:
-                print("Please enter a valid quantity.")
+                print("Enter a valid quantity.")
             else:
                 break
         order_cost = order_quantity * price
