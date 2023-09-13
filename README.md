@@ -35,3 +35,15 @@ After the user agrees to pay the bill, the script will show the user their final
 ### Second Date Decision:
 
 The script will analyze all the user's inputs, including the date's choices and the budget, to make a decision about whether the user will get a second date or not.
+
+
+### Issues & Optimization:
+*If someone uses a letter (or any non-integer input) when ordering from the menu, it will result in a ValueError. This is because the script expects the user to input an integer representing the quantity of the item they want to order, and it attempts to convert the user's input to an integer using the int() function.
+To handle this issue and make the script more robust, I can add error handling using a try and except block.* 
+
+*Another issue was that the budget would reset to its initial value for each new order, instead of keeping track of the cumulative total order cost for each user and their date. To fix this issue, I made the user's total cost and the date's total cost global variables, allowing the function to update the total order cost for both the user and the date.*
+
+* **Please note that using global variables should be done with caution, as it can make code harder to understand and maintain. In many cases, it's better to pass variables as function parameters and return values to promote cleaner and more modular code. However, in this specific scenario where I want to maintain a running total across multiple function calls, using a global variable can be a reasonable choice.** 
+
+
+
